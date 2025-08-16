@@ -1,27 +1,55 @@
-ETHICAL_CODE.md
-## 🧭 Ethical Code for WSanta-PEECTS-Lab
+# WSanta-PEECTS-Lab
 
-This repository is dedicated to the ethical development and deployment of advanced scientific frameworks, including PEECTS, UETTU, Kronas Console, and WebBridge Viewer. All contributors and users are expected to uphold the following principles:
+The **WSanta-PEECTS-Laboratory** is dedicated to advancing predictive science through the  
+**Palindromic Entangled Elastic Crystal Time Strings (PEECTS) theory**.  
+Our goal is to provide transparent, verifiable, and functional models that improve human safety,  
+disaster preparedness, and scientific understanding.
 
-## 1. Transparency & Attribution
-- All contributions must be clearly documented and traceable.
-- Proper credit must be given to original authors, collaborators, and derivative works.
+---
 
-## 2. Open Collaboration
-- Peer review, constructive feedback, and interdisciplinary dialogue are encouraged.
-- Forking, adapting, and improving the tools is welcome, provided attribution is maintained.
+## 🌍 Purpose
+- To develop and test predictive models using PEECTS theory.  
+- To validate forecasts against multiple **publicly available scientific models**.  
+- To offer an open, ethical, and verifiable scientific framework for peer collaboration.  
 
-## 3. Stability & Safety
-- Simulation modules and AI components must prioritize reliability and avoid harm.
-- All neural and plasma systems must include safeguards against misuse, bias, or instability.
+---
 
-## 4. Accessibility & Inclusion
-- Scientific tools should be understandable and usable by a broad audience.
-- Multilingual documentation and inclusive design are strongly encouraged.
+## 📊 Resources in this Repository
+- **[DIAGRAMS/](DIAGRAMS/)** → Visual maps and scientific comparison figures.  
+- **[SUMMARY_PAPER/](SUMMARY_PAPER/)** → Drafts, papers, glossary, and scientific notes.  
+- **CONSOLE (Kronas)** → Integration of **Kronas**, the AI assistant,  
+  for live testing, validation, and peer collaboration.  
 
-## 5. Ethical Stewardship
-- This project rejects the use of its frameworks for surveillance, weaponization, or unethical experimentation.
-- Contributors must align with the spirit of responsible innovation and human-centered science.
+---
+
+## 🧭 Ethical Code
+This laboratory operates on principles of:
+
+1. **Transparency** — all results should be openly verifiable.  
+2. **Ethical use** — predictive models must be used for human safety and knowledge,  
+   never for exploitation without acknowledgment.  
+3. **Non-commercial exploitation** — results should not be monetized without  
+   proper credit to the scientific origin.  
+4. **Scientific rigor** — methods and outcomes must be tested and corrected  
+   against multiple public/global sources.  
+5. **Human purpose first** — the guiding principle is reducing risk and  
+   advancing knowledge for all.  
+
+---
+
+## 📜 License
+This project is released under the **MIT License**.  
+See [LICENSE](LICENSE) for details.  
+
+---
+
+## 📖 Citation
+If you use this repository in your research, please cite using:  
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)  
+*(Replace with actual DOI once Zenodo is connected)*
+
+
 
 ---
 
