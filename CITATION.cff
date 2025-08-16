@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this lab, please cite:"
+authors:
+  - family-names: Santa Gómez
+    given-names: Wilfredo
+title: "WSanta-PEECTS-Lab"
+version: "2025.08"
+doi: "10.5281/zenodo.XXXXXXX"   # (you can mint free DOIs at Zenodo)
+date-released: 2025-08-16
