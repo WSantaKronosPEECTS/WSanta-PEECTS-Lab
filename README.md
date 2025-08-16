@@ -47,7 +47,7 @@ See [LICENSE](LICENSE) for details.
 If you use this repository in your research, please cite using:  
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)  
-*(Replace with actual DOI once Zenodo is connected)*[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)
+*(Replace with actual DOI once Zenodo is connected)*[![DOI]:
 
 
 
