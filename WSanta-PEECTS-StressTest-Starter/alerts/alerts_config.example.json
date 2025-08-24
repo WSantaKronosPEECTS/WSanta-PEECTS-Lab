@@ -1,0 +1,10 @@
+{
+  "enabled": false,
+  "channels": [
+    "sms"
+  ],
+  "sms_gateway": "YOUR_NUMBER@txt.att.net",
+  "throttle": {
+    "max_per_hour": 2
+  }
+}

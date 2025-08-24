@@ -1,0 +1,10 @@
+{
+  "title": "WSanta-PEECTS Stress-Test Starter",
+  "upload_type": "software",
+  "creators": [
+    {
+      "name": "WSanta Lab"
+    }
+  ],
+  "description": "Starter scaffold to stress-test PEECTS predictions for life-safety use."
+}
