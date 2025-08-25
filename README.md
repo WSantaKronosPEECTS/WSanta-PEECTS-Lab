@@ -1,4 +1,5 @@
 # WSanta-PEECTS-Lab
+[![Link Check](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml)
 
 The **WSanta-PEECTS-Laboratory** is dedicated to advancing predictive science through the  
 **Palindromic Entangled Elastic Crystal Time Strings (PEECTS) theory**.  
