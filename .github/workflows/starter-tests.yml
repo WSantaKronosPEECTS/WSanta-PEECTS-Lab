@@ -1,1 +1,22 @@
+name: Starter Tests
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  check-starter:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify starter folder structure
+        run: |
+          test -d WSanta-PEECTS-StressTest-Starter || (echo "❌ Starter folder missing" && exit 1)
+          test -d WSanta-PEECTS-StressTest-Starter/data || (echo "❌ data/ folder missing" && exit 1)
+          test -d WSanta-PEECTS-StressTest-Starter/scripts || (echo "❌ scripts/ folder missing" && exit 1)
+          test -d WSanta-PEECTS-StressTest-Starter/notebooks || (echo "❌ notebooks/ folder missing" && exit 1)
+          test -d WSanta-PEECTS-StressTest-Starter/results || (echo "❌ results/ folder missing" && exit 1)
+          echo "✅ Starter structure is present"
 
