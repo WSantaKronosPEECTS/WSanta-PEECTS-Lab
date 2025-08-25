@@ -1,6 +1,6 @@
 # WSanta-PEECTS-Lab
-[![Starter Tests](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml)
-[![Link Check](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml)
+
+[![Link Check](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml) [![Starter Tests](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml)
 
 The **WSanta-PEECTS-Laboratory** is dedicated to advancing predictive science through the  
 **Palindromic Entangled Elastic Crystal Time Strings (PEECTS) theory**.  
