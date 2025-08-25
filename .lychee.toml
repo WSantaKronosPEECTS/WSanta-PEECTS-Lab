@@ -1,0 +1,30 @@
+# Retries / rate limits
+max_retries = 2
+retry_wait_time = 2
+accept = [200, 206, 429]
+
+# Exclude noisy or non-HTTP links
+exclude = [
+  "^mailto:",
+  "localhost",
+  "127.0.0.1",
+  "https://github.com/.*/issues/new.*",
+  "https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/releases/download/.*"
+]
+
+# Skip vendor/build dirs
+exclude_path = [
+  ".git/",
+  "node_modules/",
+  "dist/",
+  "build/",
+  ".venv/",
+  "venv/"
+]
+
+# Use GitHub token for higher rate limits
+github_token = "${GITHUB_TOKEN}"
+
+# Cache results to reduce flakiness
+cache = true
+Add lychee configuration
