@@ -2,11 +2,7 @@
 [![Link Check](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml) [![Starter Tests](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml)
 
 🔎 **Badge meanings**  
-- **Link Check** → makes sure all links in your docs/README are valid (no 404s).  
-- **Starter Tests** → confirms the starter project has the required folders (`data/`, `scripts/`, `notebooks/`, `results/`).  
-
----
-
+  
 [![Link Check](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml) [![Starter Tests](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml)
 
 The **WSanta-PEECTS-Laboratory** is dedicated to advancing predictive science through the  
