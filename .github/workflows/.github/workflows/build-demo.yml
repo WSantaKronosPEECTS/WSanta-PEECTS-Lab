@@ -1,5 +1,4 @@
 name: Build & Run Demo
-
 on:
   push:
   pull_request:
@@ -19,3 +18,4 @@ jobs:
       - name: Run demo build
         run: |
           echo "✅ Build & Run Demo workflow executed successfully"
+
