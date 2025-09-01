@@ -1,3 +1,0 @@
-git clone https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab.git
-cd WSanta-PEECTS-Lab
-mkdir -p .github/workflows
