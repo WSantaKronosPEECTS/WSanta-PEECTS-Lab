@@ -26,7 +26,7 @@ disaster preparedness, and scientific understanding.
 
 ## 🌍 Purpose
 - To develop and test predictive models using PEECTS theory.  
-- To validate forecasts against multiple **publicly available scientific models**.  
+- To prove its value as an enhancemer of **publicly available scientific models** accuracy.  
 - To offer an open, ethical, and verifiable scientific framework for peer collaboration.  
 
 ---
