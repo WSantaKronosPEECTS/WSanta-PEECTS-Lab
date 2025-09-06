@@ -55,7 +55,9 @@ This laboratory operates on principles of:
 
 ## 📜 License
 This project is released under the **MIT License**.  
-See [LICENSE](LICENSE) for details.  
+See - You’ll have a **valid `README.md`**.
+- The **broken “readme.txt” issue disappears**.
+- The **green badge test** should pass once the links stop pointing to missing files.
 
 ---
 
