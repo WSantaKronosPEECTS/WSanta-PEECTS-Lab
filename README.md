@@ -1,6 +1,6 @@
 # WSanta-PEECTS-Lab
 [![Link Check](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml) [![Starter Tests](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml) 
-[![Build & Run Demo](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/build-demo.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/build-demo.yml)
+[![Build & Run Demo](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/build-demo.yml/badge.svg)]
 
 🔎 **Badge meanings**  
 - **Link Check** → verifies that all README/docs links are valid.  
