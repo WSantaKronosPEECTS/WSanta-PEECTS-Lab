@@ -1,12 +1,11 @@
 # WSanta-PEECTS-Lab
 [![Link Check](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml) [![Starter Tests](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml) 
-[![Build & Run Demo](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/build-demo.yml/badge.svg)]
+[![Build & Run Demo].(https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/build-demo.yml/badge.svg)]
 
 🔎 **Badge meanings**  
 - **Link Check** → verifies that all README/docs links are valid.  
 - **Starter Tests** → checks starter project folders (`data/`, `scripts/`, `notebooks/`, `results/`).  
 - **Build & Run Demo** → confirms demo workflow executes successfully.  
-
 ---
 
 The WSanta-PEECTS-Laboratory is dedicated to advancing predictive science through the
