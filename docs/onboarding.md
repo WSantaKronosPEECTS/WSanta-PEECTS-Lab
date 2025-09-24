@@ -19,4 +19,5 @@ Welcome to the WSanta-PEECTS Lab—a deployable framework for forensic simulatio
    ```bash
    git clone https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab.git
    cd WSanta-PEECTS-Lab
+npm install
 
