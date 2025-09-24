@@ -31,10 +31,16 @@ disaster preparedness, and scientific understanding.
 ---
 
 ## 📊 Resources in this Repository
+## 🧭 Contributor Resources
+
+- [Onboarding Guide](docs/onboarding.md): Start here to explore modules, workflows, and validation logic  
+- [PEECTS Glossary](docs/glossary.md): Definitions of key terms and modules
+
 - **[DIAGRAMS/](DIAGRAMS/)** → Visual maps and scientific comparison figures.  
 - **[SUMMARY_PAPER/](SUMMARY_PAPER/)** → Drafts, papers, glossary, and scientific notes.  
 - **CONSOLE (Kronas)** → Integration of **Kronas**, the AI assistant,  
   for live testing, validation, and peer collaboration.  
+## 🧭 Contributor Resources
 
 ---
 
