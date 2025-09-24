@@ -1,8 +1,13 @@
 # 🧠 Kronas Console Integration
 
-This folder contains tools for live testing, validation, and peer collaboration using Kronas.
+This folder contains tools for live testing, validation, and peer collaboration using Kronas, the AI assistant embedded in the WSanta-PEECTS Lab.
 
-## Files
-- `WSantaKronosConsole.exe` — Launches the console interface
-- `LaunchKronas.bat` — Starts Kronas with voice config
-- `KronasVoiceConfig.json` — Configuration for voice and validation modules
+---
+
+## 🚀 Launch Instructions
+
+To start the Kronas console:
+
+```bash
+LaunchKronas.bat
+
