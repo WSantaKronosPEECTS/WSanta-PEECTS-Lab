@@ -46,8 +46,8 @@ disaster preparedness, and scientific understanding.
 
 - [Onboarding Guide](docs/onboarding.md): Start here to explore modules, workflows, and validation logic  
 - [PEECTS Glossary](docs/glossary.md): Definitions of key terms and modules  
-- [📊 Lab Dashboard](docs/dashboard.md): View workflow status, contributor badges, and release history  
-- [DIAGRAMS/](DIAGRAMS): Visual maps and scientific comparison figures  
+- [📊 Lab Dashboard](docs/dashboard.md): View workflow status, contributor badges, and release history
+-[DIAGRAMS/](DIAGRAMS): Visual maps and scientific comparison figures  
 - [SUMMARY_PAPER/](SUMMARY_PAPER): Drafts, papers, glossary, and scientific notes  
 - [CONSOLE (Kronas)](CONSOLE): Integration of Kronas for live testing, validation, and peer collaboration
 
