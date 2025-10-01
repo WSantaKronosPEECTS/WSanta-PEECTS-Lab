@@ -20,3 +20,33 @@ jobs:
           test -d WSanta-PEECTS-StressTest-Starter/results || (echo "❌ results/ folder missing" && exit 1)
           echo "✅ Starter structure is present"
 
+@echo off
+:: Forensic Simulation Terminal Launcher - WSanta-PEECTS-Lab
+:: Requires admin privileges
+
+:: Check for admin rights
+net session >nul 2>&1
+if %errorLevel% == 0 (
+    echo Launching Forensic Simulation Terminal...
+) else (
+    echo Requesting administrator privileges...
+    powershell -Command "Start-Process '%~f0' -Verb RunAs"
+    exit /b
+)
+
+:: Set environment variables
+set SIMULATION_PATH=C:\WSantaLab\Terminal
+set LOG_PATH=%SIMULATION_PATH%\logs
+set MODULE_PATH=%SIMULATION_PATH%\modules
+
+:: Launch terminal interface
+cd /d %SIMULATION_PATH%
+start cmd /k "title Forensic Simulation Terminal && echo Welcome to WSanta-PEECTS-Lab && echo. && type welcome-dashboard.md"
+
+:: Optional: preload glossary index
+start notepad %SIMULATION_PATH%\glossary\glossary-index.md
+
+:: Optional: preload simulation module
+start "" "%MODULE_PATH%\ForensicCar.exe"
+
+exit
