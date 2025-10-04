@@ -1,40 +1,64 @@
-# WSanta-PEECTS-Lab
+# WSanta‑PEECTS‑Lab
 
-[![Link Check](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/link-check.yml)
-[![Starter Tests](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/starter-tests.yml)
-[![Build & Run Demo](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/build-demo.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/build-demo.yml)
-[![PEECTS Deploy](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/PEECTS-deploy.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/PEECTS-deploy.yml)
+**An open scientific forecasting and modeling lab based on the Palindromic Entangled Elastic Crystal Time Strings (PEECTS) Unification Theory.**  
+Developed by Dr. Wilfredo Santa Gómez to refine predictions across multiple fields—hurricanes, gravitational waves, volcanology, solar storms, forensic reconstruction, and beyond.
 
-🔎 **Badge Meanings**:
-- **Link Check**: Verifies all README/docs links are valid.
-- **Starter Tests**: Checks starter project folders (`data/`, `scripts/`, `notebooks/`, `results/`).
-- **Build & Run Demo**: Confirms demo workflow executes successfully.
-- **PEECTS Deploy**: Automates build, test, and release packaging.
+---
 
-The WSanta-PEECTS-Laboratory is dedicated to advancing predictive science through the **Palindromic Entangled Elastic Crystal Time Strings (PEECTS)** theory. Our mission is to develop transparent, verifiable, and functional models that enhance human safety, disaster preparedness, and scientific understanding.
+## 🧬 Overview
 
-## 🌍 Purpose
-- Develop and test predictive models using PEECTS theory.
-- Validate forecasts against multiple publicly available scientific models (e.g., USGS, NOAA).
-- Provide an open, ethical, and verifiable framework for peer collaboration.
+**WSanta‑PEECTS‑Lab** is a transdisciplinary digital laboratory applying the **PEECTS framework** to real-world forecasting challenges.  
+PEECTS introduces *Elastic Time Corrections (ETC)*, entangled spacetime models, and palindromic dynamics to improve the accuracy and explanatory power of scientific simulations and alerts.
 
-## 📊 Resources in this Repository
-- **DIAGRAMS/**: Visual maps and scientific comparison figures.
-- **SUMMARY_PAPER/**: Drafts, papers, glossary, and scientific notes (e.g., PEECTS Dr Santa.txt).
-- **CONSOLE (Kronas)**: Integration of Kronas, the AI assistant, for live testing and validation via GitHub Discussions.
-- **docs/**: Onboarding guide, glossary, and reference materials.
-- **data/**: Sample datasets for PEECTS validations.
-- **scripts/**: Utility scripts for model runs.
-- **notebooks/**: Jupyter notebooks for interactive explorations.
-- **results/**: Output from model validations and forecasts.
+This repository offers tools, models, simulators, and validation workflows for:
+- Natural disaster prediction (hurricanes, volcanic eruptions, solar flares)
+- Gravitational and quantum event modeling
+- Forensic accident reconstruction
+- Environmental-economic forecasting
+- Dolphin biomechanics and adaptive behavior
+- Signal cloud alerts and real-time ETC applications
 
-## 🛠 Installation and Usage
-1. **Clone the repo**:  
-   ```bash
-   git clone https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab.git
-   cd WSanta-PEECTS-Lab
+---
 
+## 🔍 Keywords
 
+`forecasting` `gravitational-waves` `elastic-time` `quantum-cosmology` `hurricane-models`  
+`volcano-forecast` `PEECTS` `open-science` `entanglement` `early-warning` `KronosConsole` `AI-for-physics`
 
+---
 
+## ⚙️ Features
 
+- 🌀 **Elastic Time Forecast Engines (ETC)**  
+  Hurricane & solar storm predictions enhanced with time-string dynamics
+
+- 🌋 **VARI‑P Volcanic Risk Index**  
+  Real-time lava probability and resonance-based eruption alerts
+
+- 🛰️ **PEECTS Signal Cloud (PSC)**  
+  Multi-hazard early warning system with SMS/email triggers
+
+- 🔬 **ForensicCar**  
+  AI-powered impact reconstruction using ETC and vehicular kinematics
+
+- 🐬 **Behavioral BioSimulation**  
+  Analysis of Hector’s dolphin barrel rolls & adaptive postures
+
+- 📈 **Economic & Geopolitical Forecasting**  
+  Palindromic event correlation tools (pandemics, economic collapses)
+
+- 🧠 **Kronas Virtual Assistant**  
+  Palindromic co-processor for executing scripts, models, and simulations
+
+---
+
+## 🧪 Usage
+
+You can use the lab locally or in virtualized environments:
+
+```bash
+# Example: Run forecast simulator
+python run_forecast.py --model hurricane --region Caribbean --peects
+
+# Start Kronos Console
+./StartPEECTSProject.ps1
