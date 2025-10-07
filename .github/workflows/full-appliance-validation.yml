@@ -9,6 +9,7 @@ on:
 jobs:
   validate-fusion:
     runs-on: windows-latest
+    timeout-minutes: 15
 
     steps:
       - name: Checkout code
@@ -20,28 +21,35 @@ jobs:
           activate-environment: fusion-env
           python-version: "3.10"
           auto-update-conda: true
+          use-mamba: true
           channels: conda-forge
 
       - name: Install dependencies
+        shell: bash
         run: |
-          conda install numpy pandas matplotlib -y
-          if exist requirements.txt (
+          mamba install numpy pandas matplotlib -y
+          if [ -f requirements.txt ]; then
             pip install -r requirements.txt
-          ) else (
+          else
             echo "No requirements.txt, skipping pip"
-          )
+          fi
 
       - name: Run validation script
+        shell: bash
         run: |
-          if exist validate_fusion.py (
-            python validate_fusion.py
-          ) else (
-            echo "validate_fusion.py not found, skipping validation"
-          )
+          mkdir -p logs
+          if [ -f validate_fusion.py ]; then
+            echo "Running validation..."
+            python validate_fusion.py | tee logs/validation_output.txt
+          else
+            echo "validate_fusion.py not found, skipping validation" | tee logs/validation_output.txt
+          fi
 
       - name: Upload results
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: fusion-validation-logs
           path: logs/
           if-no-files-found: warn
+
