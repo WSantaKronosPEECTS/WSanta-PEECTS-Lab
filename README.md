@@ -18,7 +18,22 @@ This repository offers tools, models, simulators, and validation workflows for:
 - Dolphin biomechanics and adaptive behavior
 - Signal cloud alerts and real-time ETC applications
 
----
+----
+
+## 👋 Welcome Contributors
+
+This lab thrives on collaboration. Whether you're validating simulations, suggesting new modules, or improving documentation, your contributions help build a legacy of transparent, reproducible science.
+
+To get started:
+
+- 📖 Read our [CONTRIBUTING.md](CONTRIBUTING.md)
+- 🧪 Submit a [Validation Log](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/issues/new?template=validation_log.md)
+- 💡 Suggest a [Feature](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/issues/new?template=feature_request.md)
+- 🐞 Report a [Bug](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/issues/new?template=bug_report.md)
+- 📣 Join our [Show & Tell](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/discussions) to share validated results
+
+We’re glad you’re here. Let’s build something that lasts.
+--
 
 ## 🔍 Keywords
 
