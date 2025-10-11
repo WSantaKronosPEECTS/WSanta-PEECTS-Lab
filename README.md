@@ -74,6 +74,7 @@ You can use the lab locally or in virtualized environments:
 ```bash
 # Example: Run forecast simulator
 python run_forecast.py --model hurricane --region Caribbean --peects
+[![CI Status](https://img.shields.io/badge/View-CI_Status-blueviolet)](ci-status.md)
 
 # Start Kronos Console
 ./StartPEECTSProject.ps1
