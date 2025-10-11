@@ -2,51 +2,39 @@ name: Starter Tests
 
 on:
   push:
+    branches: [main]
   pull_request:
-  workflow_dispatch:
+    branches: [main]
+
+permissions:
+  contents: read
+  actions: write
 
 jobs:
-  check-starter:
+  test:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
+    - name: Checkout repo
+      uses: actions/checkout@v4
 
-      - name: Verify starter folder structure
-        run: |
-          test -d WSanta-PEECTS-StressTest-Starter || (echo "❌ Starter folder missing" && exit 1)
-          test -d WSanta-PEECTS-StressTest-Starter/data || (echo "❌ data/ folder missing" && exit 1)
-          test -d WSanta-PEECTS-StressTest-Starter/scripts || (echo "❌ scripts/ folder missing" && exit 1)
-          test -d WSanta-PEECTS-StressTest-Starter/notebooks || (echo "❌ notebooks/ folder missing" && exit 1)
-          test -d WSanta-PEECTS-StressTest-Starter/results || (echo "❌ results/ folder missing" && exit 1)
-          echo "✅ Starter structure is present"
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
 
-@echo off
-:: Forensic Simulation Terminal Launcher - WSanta-PEECTS-Lab
-:: Requires admin privileges
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
 
-:: Check for admin rights
-net session >nul 2>&1
-if %errorLevel% == 0 (
-    echo Launching Forensic Simulation Terminal...
-) else (
-    echo Requesting administrator privileges...
-    powershell -Command "Start-Process '%~f0' -Verb RunAs"
-    exit /b
-)
+    - name: Run starter tests
+      run: |
+        echo "Running starter tests..."
+        pytest tests/
 
-:: Set environment variables
-set SIMULATION_PATH=C:\WSantaLab\Terminal
-set LOG_PATH=%SIMULATION_PATH%\logs
-set MODULE_PATH=%SIMULATION_PATH%\modules
-
-:: Launch terminal interface
-cd /d %SIMULATION_PATH%
-start cmd /k "title Forensic Simulation Terminal && echo Welcome to WSanta-PEECTS-Lab && echo. && type welcome-dashboard.md"
-
-:: Optional: preload glossary index
-start notepad %SIMULATION_PATH%\glossary\glossary-index.md
-
-:: Optional: preload simulation module
-start "" "%MODULE_PATH%\ForensicCar.exe"
-
-exit
+    - name: Upload test logs
+      uses: actions/upload-artifact@v4
+      with:
+        name: test-logs
+        path: logs/
