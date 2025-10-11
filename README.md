@@ -1,4 +1,9 @@
 # WSanta‑PEECTS‑Lab
+[![Build Demo](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/build-demo.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/build-demo.yml)
+[![Elastic Chain Validation](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/elastic-entangle-validate.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/elastic-entangle-validate.yml)
+[![PR Validation](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/pr-validation.yml/badge.svg)](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/pr-validation.yml)
+
+📊 **[Live Dashboard Overview](docs/dashboard.md)** — View workflow status, contributor badges, and release milestones.
 
 **An open scientific forecasting and modeling lab based on the Palindromic Entangled Elastic Crystal Time Strings (PEECTS) Unification Theory.**  
 Developed by Dr. Wilfredo Santa Gómez to refine predictions across multiple fields—hurricanes, gravitational waves, volcanology, solar storms, forensic reconstruction, and beyond.
