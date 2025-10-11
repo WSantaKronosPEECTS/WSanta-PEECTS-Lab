@@ -2,37 +2,38 @@ name: Python / Conda on Windows
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [main]
   pull_request:
-    branches: [ "main" ]
+    branches: [main]
+
+permissions:
+  contents: read
+  actions: write
 
 jobs:
-  build-windows:
+  build:
     runs-on: windows-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout repo
+      uses: actions/checkout@v4
 
-      - name: Set up Miniconda
-        uses: conda-incubator/setup-miniconda@v3
-        with:
-          activate-environment: peects-env
-          python-version: "3.10"
-          auto-update-conda: true
-          channels: conda-forge,defaults
+    - name: Set up Conda
+      uses: conda-incubator/setup-miniconda@v2
+      with:
+        auto-update-conda: true
+        python-version: 3.10
+        activate-environment: windows-env
+        environment-file: environment.yml
 
-      - name: Verify Conda Setup
-        run: |
-          conda info
-          conda list
+    - name: Run Windows validation
+      run: |
+        echo "Running Conda-based validation on Windows..."
+        python validate_windows.py
 
-      - name: Install Python dependencies
-        run: |
-          conda install numpy pandas matplotlib -y
-          pip install -r requirements.txt || echo "No requirements.txt found, skipping pip"
+    - name: Upload validation logs
+      uses: actions/upload-artifact@v4
+      with:
+        name: windows-validation-logs
+        path: logs/
 
-      - name: Run PEECTS tests (or main script)
-        run: |
-          echo "Running tests or main app"
-          python -m unittest discover -s tests || echo "No tests found, skipping"
