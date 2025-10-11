@@ -45,7 +45,14 @@ To get started:
 - 📣 Join our [Show & Tell](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/discussions) to share validated results
 
 We’re glad you’re here. Let’s build something that lasts.
---
+-### 🚀 Core Workflow Status
+
+| Workflow | Badge | Description |
+|----------|-------|-------------|
+| **PR Validation** | ![PR Validation](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/pr-validation.yml/badge.svg) | Ensures all pull requests are validated before merge |
+| **FIET Sweep** | ![FIET Sweep](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/fiet-sweep.yml/badge.svg) | Detects and packages FIET anomalies |
+| **ForensicCar Package** | ![ForensicCar Package](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab/actions/workflows/forensiccar-package.yml/badge.svg) | Bundles ForensicCar ZIP with video toggles |
+-
 
 ## 🔍 Keywords
 
