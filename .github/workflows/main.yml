@@ -1,56 +1,37 @@
-name: Full Appliance Validation
+name: Full Appliance validation
+
+name: Link Check
 
 on:
   push:
-    branches: [ main ]
   pull_request:
-    branches: [ main ]
   workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1" # Mondays 06:00 UTC
 
 jobs:
-  validate-appliance:
+  linkChecker:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        domain: [solar, fusion, blackhole]
-
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Run lychee link checker
+        uses: lycheeverse/lychee-action@v1
         with:
-          python-version: '3.11'
+          args: >-
+            --no-progress
+            --verbose
+            --accept 200,206,429
+            --max-redirects 10
+            --exclude-mail
+            --config .lychee.toml
+            .
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Install dependencies
-        run: |
-          pip install -r requirements.txt
-
-      - name: Run domain validation
-        run: |
-          python validate_appliance.py --domain ${{ matrix.domain }} --mode full --log output_${{ matrix.domain }}.log
-
-      - name: Render map overlay
-        run: |
-          python render_map.py --domain ${{ matrix.domain }} --output map_${{ matrix.domain }}.png
-
-      - name: Simulate alert
-        run: |
-          python trigger_alert.py --domain ${{ matrix.domain }} --input test_input.json --output alert_${{ matrix.domain }}.json
-
-      - name: Archive timestamped log
-        run: |
-          mkdir -p archive/${{ matrix.domain }}
-          cp output_${{ matrix.domain }}.log archive/${{ matrix.domain }}/log_$(date +%Y%m%d_%H%M%S).txt
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@v3
+      - name: Upload lychee report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
         with:
-          name: validation-${{ matrix.domain }}
-          path: |
-            output_${{ matrix.domain }}.log
-            map_${{ matrix.domain }}.png
-            alert_${{ matrix.domain }}.json
-            archive/${{ matrix.domain }}/*
-
+          name: lychee-report
+          path: lychee/out.md
