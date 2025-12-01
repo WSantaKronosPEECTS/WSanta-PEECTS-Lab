@@ -1,0 +1,54 @@
+name: "📘 Publish Theoretical Note"
+description: "Add a new theoretical construct to WSantaKronos–PEECTS Lab"
+title: "[Theory] "
+labels: ["theory", "documentation", "PEECTS"]
+body:
+  - type: input
+    id: theory_title
+    attributes:
+      label: "Theory Title"
+      placeholder: "Vectorial Elasticity Principle (VEP)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: "Summary"
+      placeholder: "Provide a short summary of the theoretical construct..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: full_text
+    attributes:
+      label: "Full Theoretical Content"
+      placeholder: "Paste the full formal description here..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: implications
+    attributes:
+      label: "Implications / Applications"
+      placeholder: "List the scientific domains affected by this theory..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: link_pdf
+    attributes:
+      label: "Will this theory have a PDF?"
+      options:
+        - "Yes"
+        - "No"
+    validations:
+      required: true
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: "Attach Files (optional)"
+      placeholder: "Any diagrams, PDFs, or Markdown notes..."
+    validations:
+      required: false
