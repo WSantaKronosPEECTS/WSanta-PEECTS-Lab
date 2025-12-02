@@ -1,6 +1,15 @@
 # 🔄 PEECTS Live Dashboard
 
 This dashboard auto-refreshes every 60 seconds.
+This update integrates the new live auto-refresh dashboard with branding
+improvements, enhanced workflow visibility, and a unified layout.
+
+Changes include:
+• Auto-refresh GitHub workflow status panel
+• Updated PEECTS dashboard structure
+• Improved markup and styling
+• Preparations for multilingual onboarding
+• Expanded integration support for release workflows
 
 ## 🔧 Workflow Status
 
