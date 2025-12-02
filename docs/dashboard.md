@@ -1,55 +1,39 @@
-# 📊 WSanta-PEECTS Lab Dashboard
+# 🔄 PEECTS Live Dashboard
 
-Welcome to the operational dashboard for the WSanta-PEECTS Lab. This page provides a live overview of workflow status, contributor progress, validation history, and public deployment milestones.
+This dashboard auto-refreshes every 60 seconds.
 
----
+## 🔧 Workflow Status
 
-## ✅ Workflow Status
+<div id="workflow-status" style="padding:10px; background:#f5f5f5; border-radius:8px;">
+    Loading latest workflow status...
+</div>
 
-| Workflow | Status | Last Run | Notes |
-|----------|--------|----------|-------|
-| `build-demo.yml` | ✅ Passed | `2025-09-22` | Demo interface built and archived |
-| `fiet-sweep.yml` | ✅ Passed | `2025-09-23` | FIET anomalies detected and packaged |
-| `forensiccar-package.yml` | ✅ Passed | `2025-09-23` | ForensicCar ZIP bundled with video toggles |
-| `readme-license-inject.yml` | ✅ Passed | `2025-09-24` | Metadata injected into all app folders |
-| `elastic-entangle-validate.yml` | ✅ Passed | `2025-09-24` | Time chain validated and maps rendered |
-| `generate-badges-changelog.yml` | ✅ Passed | `2025-09-24` | Contributor badges and changelogs generated |
-| `publish-release.yml` | ⏳ Pending | — | Awaiting next semantic tag |
-| `pr-validation.yml` | ✅ Passed | `2025-09-24` | All PRs validated before merge |
+<script>
+async function refreshWorkflow() {
+    const url = "https://api.github.com/repos/WSantaKronos/WSantaPEECTS-Lab/actions/workflows/publish-release.yml/runs?per_page=1";
 
----
+    try {
+        const response = await fetch(url);
+        const data = await response.json();
+        const run = data.workflow_runs[0];
 
-## 🧠 Contributor Badges
+        const statusHTML = `
+            <strong>Name:</strong> publish-release.yml<br>
+            <strong>Status:</strong> ${run.status}<br>
+            <strong>Conclusion:</strong> ${run.conclusion}<br>
+            <strong>Last Update:</strong> ${new Date(run.updated_at).toLocaleString()}<br>
+            <br>
+            <a href="${run.html_url}" target="_blank">View on GitHub →</a>
+        `;
 
-| Contributor | Module | Badge | Status |
-|-------------|--------|-------|--------|
-| `WSanta` | ForensicCar | 🧠 FIET-Ready | ✅ Validated |
-| `WSanta` | FIETModule | 🔁 Elastic-Compliant | ✅ Validated |
-| `WSanta` | ElasticMapRenderer | ✅ Validated | ✅ Audit-Ready |
+        document.getElementById("workflow-status").innerHTML = statusHTML;
 
----
+    } catch (error) {
+        document.getElementById("workflow-status").innerHTML =
+            "⚠️ Cannot load workflow status.";
+    }
+}
 
-## 📦 Public Releases
-
-| Version | Date | Artifacts |
-|---------|------|-----------|
-| `v1.0.0` | — | ⏳ Pending |
-| `v0.9.0-beta` | `2025-09-20` | ForensicCar.zip, FIET-Package.zip |
-
----
-
-## 📘 Resources
-
-- [Onboarding Guide](onboarding.md)
-- [PEECTS Glossary](glossary.md)
-- [Repository](https://github.com/WSantaKronosPEECTS/WSanta-PEECTS-Lab)
-
----
-
-## 🧩 Expansion Roadmap
-
-- [ ] Add multilingual onboarding (Spanish, French)
-- [ ] Embed dashboard into homepage
-- [ ] Auto-refresh workflow status via GitHub API
-- [ ] Visualize entanglement maps in real-time
-
+refreshWorkflow();                  // Load immediately
+setInterval(refreshWorkflow, 60000); // Refresh every 60s
+</script>
