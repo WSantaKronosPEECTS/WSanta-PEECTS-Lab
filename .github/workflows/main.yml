@@ -1,37 +1,27 @@
-name: Full Appliance validation
-
-name: Link Check
+name: Generate Zenodo-ready full repository archive
 
 on:
   push:
-  pull_request:
+    tags:
+      - "v*"
   workflow_dispatch:
-  schedule:
-    - cron: "0 6 * * 1" # Mondays 06:00 UTC
+
+permissions:
+  contents: read
 
 jobs:
-  linkChecker:
+  archive:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
-      - name: Run lychee link checker
-        uses: lycheeverse/lychee-action@v1
         with:
-          args: >-
-            --no-progress
-            --verbose
-            --accept 200,206,429
-            --max-redirects 10
-            --exclude-mail
-            --config .lychee.toml
-            .
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
 
-      - name: Upload lychee report artifact
-        if: always()
-        uses: actions/upload-artifact@v4
+      - name: Create archive
+        run: |
+          zip -r repo-archive.zip . -x ".git/*"
+
+      - uses: actions/upload-artifact@v4
         with:
-          name: lychee-report
-          path: lychee/out.md
+          name: zenodo-archive
+          path: repo-archive.zip
